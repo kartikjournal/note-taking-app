@@ -1,5 +1,6 @@
 area = document.getElementById('area')
 area.innerHTML = localStorage.getItem('value')
+
 function myFunction(){
     document.getElementById("navbar").classList.toggle("nav-hide");
     document.getElementById("container").classList.toggle("hide");
@@ -17,7 +18,9 @@ function add(){
         <textarea></textarea>
     </div>
 </div>
-    `
+    `;
     container.appendChild(textarea)
-    localStorage.setItem('value',area.value )
 } 
+function save(){
+    localStorage.setItem('value',area.value)
+}
