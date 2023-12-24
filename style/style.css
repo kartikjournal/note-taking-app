@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  
+}
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+h1{
+    color: #00ADB5;
+    font-family: 'Silkscreen', sans-serif;
+}
+button{
+    font-family: 'Bebas Neue', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+}
+nav .logo{
+    font-size: 30px;
+}
+nav .navbar{
+    margin-top: 20px;
+}
+nav .navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 20px 20px 20px;
+}
+.menu i{
+    font-size: 30px;
+    margin-top: 15px;
+    display: none;
+}
+@media (max-width:700px) {
+    .menu i{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav-hide{
+        display: block;
+        top: 30%;
+        position: absolute;
+        width: 10%;
+        line-height: 50px;
+        margin-right: 70px;
+    }
+}
+.hide{
+    display: none;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main{
+    background-color: #00ADB5;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.icons button{
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px;
+    background-color: #222831;
+    color: #fff;
+}
+.note{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.note textarea{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.box{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
